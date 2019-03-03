@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-------------- Bootstrap CSS ---------->
+    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+    <!-------------- customs css------------->
+    <link rel="stylesheet" href="css/style.css">
+    <!-------------- responsive ------------->
+    <link rel="stylesheet" href="css/media.css">
+
+    <title>Java Script</title>
+  </head>
+  <body>
+
+    <h1>Click the button to change the text</h1>
+
+    <p id="Lorem">Jashim Uddin Nirob</p>
+
+    <button type="button" onclick="loremipsum()">Click</button>
+
+
+    <h1>Click the button to change something</h1>
+
+    
+
+    <button type="button" id="on" onclick="bulbOn()">On</button>
+
+    <img src="images/pic_bulboff.gif" id="image" alt="pic">
+
+    <button type="button" id="off" onclick="bulbOff()">Off</button>
+
+
+
+    <!-- jQuery links -->
+    <!-- <script src="js/jquery-3.3.1.min.js"></script> -->
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="js/script.js"></script>
+    
+
+    <script>
+      function loremipsum(){
+        document.getElementById("Lorem").innerHTML="Hello SSB 90";
+      }
+    </script>
+
+    <script>
+      function bulbOn(){
+        document.getElementById("image").src="images/pic_bulbon.gif"
+      }
+
+      function bulbOff(){
+        document.getElementById("image").src="images/pic_bulboff.gif"
+      }
+    </script>
+  </body>
+</html>
